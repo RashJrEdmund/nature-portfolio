@@ -13,7 +13,7 @@ This page is basically built with just
 * JavaScript for functionality
 
 ### PREREQUISITES
-* You should already have a stable browser to use.
+* You should already have a stable browser to use
 * Internet connection
 * and be familiar with GitHub
 
