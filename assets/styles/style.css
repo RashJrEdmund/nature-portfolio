@@ -80,7 +80,6 @@ main {
 
 .side-menu li:hover {
   background-color: #ccc;
-  padding: 10px;
 }
 
 /* ENDING THE SIDE MENU AND STARTING THE WHOLE SECTION */
@@ -340,10 +339,6 @@ main {
   filter: drop-shadow(0);
 }
 
-.how-much-i-charge .charges .container:hover .level {
-  background-color: #000;
-}
-
 .charges .container .level {
   background-color: #616161;
   color: #fff;
@@ -352,6 +347,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.how-much-i-charge .charges .container:hover .level {
+  background-color: #000;
 }
 
 .charges .container .level2 {
@@ -529,7 +528,6 @@ footer .sub-footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 5px;
 }
 
 .sub-footer .popular-tags .btn{
@@ -537,6 +535,7 @@ footer .sub-footer {
   border: none;
   width: fit-content;
   height: fit-content;
+  margin: 5px;
 }
 
 .sub-footer .popular-tags .btn:nth-of-type(1){
@@ -577,7 +576,11 @@ footer .dark-part {
     display: none;
   }
 
-  .whole .top-varying {e
+  .side-menu li:hover {
+    background-color: unset;
+  }
+
+  .whole .top-varying {
     display: flex;
   }
 
@@ -589,15 +592,37 @@ footer .dark-part {
     grid-template-columns: 1fr;
   }
 
+  .technical-skills button:hover {
+    background-color: #616161;
+    color: #f1f1f1;
+  }
+
   .how-much-i-charge .charges {
     grid-template-columns: 1fr;
+  }
+
+  .how-much-i-charge .charges .container:hover .level {
+    background-color: #616161;
+  }
+
+  .charges .container .sign-up:hover {
+    background-color: #009688;
   }
 
   .contact-me .contacts {
     grid-template-columns: 1fr;
   }
 
+  .contact-me button:hover {
+    background-color: #000;
+    color: #f1f1f1;
+  }
+
   footer .sub-footer {
     grid-template-columns: 1fr;
+  }
+
+  .sub-footer .blog-posts > div:hover {
+    background-color: unset;
   }
 }
