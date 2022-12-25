@@ -9,8 +9,11 @@ body {
   margin: 0;
 }
 
+a {
+  color: unset;
+}
+
 main {
-  /* background-color: pink; */
   position: relative;
   width: 98vw;
   max-width: 1600px;
@@ -22,12 +25,10 @@ main {
 /* STARTING THE SIDE MENU */
 
 .side-carrier {
-  background-color: purple;
   width: 100%;
   min-width: 100px;
   height: fit-content;
   min-height: 100px;
-  padding: 10px;
 }
 
 .side-menu {
@@ -35,8 +36,8 @@ main {
   /* position: fixed; */
   left: 0;
   width: 100%;
-  padding: 10px;
   height: 100vh;
+  overflow: auto;
 }
 
 .side-menu .avatar {
@@ -47,16 +48,17 @@ main {
   border-radius: 4px;
   background-position: center;
   background-size: cover;
+  margin: 10px;
 }
 
 .side-menu header {
-  margin: 30px 0 10px;
+  margin: 30px 10px 10px;
   font-weight: 500;
 }
 
 .side-menu p {
   color: #444;
-  margin: 30px 0 10px;
+  margin: 30px 10px 10px;
   font-weight: 500;
 }
 
@@ -71,32 +73,53 @@ main {
   margin: 2rem 0;
 }
 
+.side-menu li {
+  padding: 10px;
+  margin: 0;
+}
+
+.side-menu li:hover {
+  background-color: #ccc;
+  padding: 10px;
+}
 
 /* ENDING THE SIDE MENU AND STARTING THE WHOLE SECTION */
 
 .whole {
-  /* background-color: yellowgreen; */
   width: fit-content;
   width: 100%;
   right: 0;
 }
 
 .sub-whole {
-  padding-left: 10px;
+  padding: 0 10px;
 }
 
-.top {
-  background-color: brown;
-  position: relative;
+.top-varying {
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  height: fit-content;
+  margin: 0 0 40px;
 }
 
-.top .menu-icon {
+.top-varying .menu-icon {
   background: none;
   width: fit-content;
   height: fit-content;
   display: flex;
   flex-direction: column;
-  margin: 0 0 40px;
+}
+
+.top-varying .avatar2 {
+  background: url("../images/avatar.jpg");
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
 }
 
 .menu-icon span {
@@ -109,8 +132,9 @@ main {
 
 .top header {
   width: fit-content;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 550;
+  margin: 2rem 0;
 }
 
 .top .sub1 {
@@ -140,18 +164,6 @@ main {
   margin: 0 3px;
 }
 
-.top .avatar2 {
-  background: url("../images/avatar.jpg");
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-radius: 100px;
-  width: 60px;
-  height: 60px;
-}
-
 .line1 {
   border: none;
   height: 8px;
@@ -159,7 +171,6 @@ main {
 }
 
 .image-containers {
-  background-color: brown;
   width: 100%;
   margin: 20px 0;
   display: grid;
@@ -188,24 +199,30 @@ main {
 }
 
 .whole .page-navigation {
-  /* background-color: #000; */
   width: fit-content;
-  margin: 10px auto;
+  margin: 4rem auto;
 }
 
-.whole .page-navigation button {
-  background: none;
+.whole .page-navigation .btn {
   border: none;
   font-size: 14px;
-  padding: 5px 8px;
+  padding: 10px 20px;
+  margin: 0;
 }
 
-.whole .page-navigation button:nth-of-type(1) {
+.whole .page-navigation .btn:nth-of-type(1) {
   background: #000;
   color: #fff;
-  border: none;
-  font-size: 14px;
-  padding: 5px 8px;
+}
+
+.whole .page-navigation .btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.whole .page-navigation .btn:nth-of-type(1):hover {
+  background: #ccc;
+  color: #000;
 }
 
 .center .images {
@@ -234,7 +251,6 @@ main {
 
 .center .technical-skills {
   width: 100%;
-  background-color: brown;
 }
 
 .center .technical-skills header {
@@ -289,12 +305,11 @@ main {
 }
 
 .technical-skills button:hover {
-  background-color: #cccccc;
+  background-color: #ccc;
   color: #000;
 }
 
 .how-much-i-charge {
-  background-color: brown;
   margin: 2rem auto;
 }
 
@@ -304,16 +319,14 @@ main {
 }
 
 .how-much-i-charge .charges {
-  background-color: gold;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-
 }
 
 .how-much-i-charge .charges .container {
   background-color: #f1f1f1;
-  border: 0.1px solid #999;
+  border: 0.1px solid #99999979;
   filter: grayscale(30%);
   filter: drop-shadow(100%);
   display: flex;
@@ -353,8 +366,7 @@ main {
 }
 
 .charges .container p {
-  /* background-color: #f1f1f1; */
-  border-bottom: 1px solid #808080;
+  border-bottom: 1px solid #8080803f;
   color: #444;
   margin: 0;
   padding: 1.3rem 0;
@@ -382,6 +394,10 @@ main {
   height: fit-content;
   padding: 1rem 2rem;
   align-self: center;
+}
+
+.charges .container .sign-up:hover {
+  background-color: #000;
 }
 
 .contact-me {
@@ -442,14 +458,13 @@ main {
 }
 
 .contact-me button:hover {
-  background-color: #cccccc;
+  background-color: #ccc;
   color: #000;
 }
 
 footer {
   background-color: #616161;
   color: #f1f1f1;
-  padding: 1rem 1.5rem;
 }
 
 footer .sub-footer {
@@ -457,6 +472,7 @@ footer .sub-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  padding: 1rem 1.5rem;
 }
 
 .sub-footer header {
@@ -489,7 +505,7 @@ footer .sub-footer {
 }
 
 .sub-footer .blog-posts > div:hover {
-  background-color: #cccccc;
+  background-color: #ccc;
 }
 
 .sub-footer .blog-posts img {
@@ -530,3 +546,59 @@ footer .sub-footer {
   padding: 5px 10px;
 }
 
+footer .dark-part {
+  background-color: #000;
+  color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+}
+
+@media only screen and (max-width: 992px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .whole .top-varying {
+    display: flex;
+  }
+
+  .side-carrier {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .side-carrier {
+    display: none;
+  }
+
+  .whole .top-varying {
+    display: flex;
+  }
+
+  .image-containers {
+    grid-template-columns: 1fr;
+  }
+
+  .center .images {
+    grid-template-columns: 1fr;
+  }
+
+  .how-much-i-charge .charges {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-me .contacts {
+    grid-template-columns: 1fr;
+  }
+
+  footer .sub-footer {
+    grid-template-columns: 1fr;
+  }
+}
