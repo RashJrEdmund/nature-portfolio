@@ -186,16 +186,16 @@ main {
   border: none;
 }
 
-.top .sub1 button:nth-of-type(1) {
-  background-color: #000;
-  color: #f1f1f1;
-  margin-left: 10px;
-}
-
 .top .sub1 button {
   background-color: #fff;
   padding: 5px 10px;
   margin: 0 3px;
+}
+
+.top .sub1 button:nth-of-type(1) {
+  background-color: #000;
+  color: #f1f1f1;
+  margin-left: 10px;
 }
 
 .line1 {
@@ -306,7 +306,7 @@ main {
   width: 100%;
 }
 
-.technical-skills .bar .percentage1 {
+.center .technical-skills .bar .percentage1 {
   background-color: #616161;
   height: 100%;
   width: 95%;
@@ -315,7 +315,7 @@ main {
   align-items: center;
 }
 
-.technical-skills .bar .percentage2 {
+.center .technical-skills .bar .percentage2 {
   background-color: #616161;
   height: 100%;
   width: 85%;
@@ -333,7 +333,7 @@ main {
   align-items: center;
 }
 
-.technical-skills button {
+.center .technical-skills button {
   background-color: #616161;
   color: #f1f1f1;
   border: none;
@@ -342,7 +342,7 @@ main {
   margin: 25px 0 10px;
 }
 
-.technical-skills button:hover {
+.center .technical-skills button:hover {
   background-color: #ccc;
   color: #000;
 }
