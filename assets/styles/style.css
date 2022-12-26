@@ -638,6 +638,10 @@ footer .dark-part {
     display: flex;
   }
 
+  .whole .top .sub1 .varying-btn {
+    display: none;
+  }
+
   .image-containers {
     grid-template-columns: 1fr;
   }
