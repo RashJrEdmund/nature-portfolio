@@ -529,6 +529,7 @@ footer .sub-footer {
 .sub-footer .blog-posts > div {
   height: fit-content;
   width: 100%;
+  min-height: 80px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -541,10 +542,6 @@ footer .sub-footer {
   background-color: #f1f1f1;
   border: none;
   height: 1px;
-}
-
-.sub-footer .blog-posts > div {
-  min-height: 80px;
 }
 
 .sub-footer .blog-posts > div:hover {
