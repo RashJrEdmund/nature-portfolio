@@ -25,6 +25,7 @@ main {
 /* STARTING THE SIDE MENU */
 
 .side-carrier {
+  position: relative;
   width: 100%;
   z-index: 3;
   min-width: 100px;
@@ -605,7 +606,6 @@ footer .dark-part {
   }
 
   .side-carrier {
-    /* display: none; */
     max-width: 250px;
     position: fixed;
     left: -100%;
