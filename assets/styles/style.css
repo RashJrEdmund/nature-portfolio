@@ -242,6 +242,7 @@ main {
 }
 
 .whole .page-navigation .btn {
+  background: none;
   border: none;
   font-size: 14px;
   padding: 10px 20px;
