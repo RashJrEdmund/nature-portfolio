@@ -130,11 +130,12 @@ main {
 }
 
 .top-varying {
+  background-color: green;
   width: 100%;
   display: none;
   justify-content: space-between;
   height: fit-content;
-  margin: 0 0 40px;
+  margin: 20px 0 40px;
 }
 
 .top-varying .menu-icon {
