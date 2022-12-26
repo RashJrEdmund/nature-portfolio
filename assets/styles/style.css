@@ -33,14 +33,17 @@ main {
 
 .side-menu {
   background-color: #fff;
-  /* position: fixed; */
   left: 0;
   width: 100%;
   height: 100vh;
   overflow: auto;
 }
 
-.side-menu .avatar {
+.side-menu .menu-images {
+  position: relative;
+}
+
+.side-menu .menu-images .avatar {
   background: url("../images/avatar.jpg");
   height: 150px;
   width: 150px;
@@ -49,6 +52,14 @@ main {
   background-position: center;
   background-size: cover;
   margin: 10px;
+}
+
+.side-menu .menu-images .close-icon {
+  display: none;
+  position: absolute;
+  width: 70px;
+  top: 0;
+  right: 0;
 }
 
 .side-menu header {
@@ -563,17 +574,26 @@ footer .dark-part {
   }
 
   .side-carrier {
-    display: none;
+    /* display: none; */
+    max-width: 250px;
+    position: fixed;
+    left: -100%;
+    transition: 0.5s;
+    z-index: 2;
+  }
+
+  .side-active {
+    left: 0;
+  }
+
+  .side-menu .menu-images .close-icon {
+    display: unset;
   }
 }
 
 @media only screen and (max-width: 600px) {
   main {
     grid-template-columns: 1fr;
-  }
-
-  .side-carrier {
-    display: none;
   }
 
   .side-menu li:hover {
