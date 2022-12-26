@@ -91,8 +91,30 @@ main {
   margin: 0;
 }
 
+.side-menu i {
+  margin: 0 5px;
+}
+
+.side-menu li i.cell {
+  color: #009688;
+}
+
 .side-menu li:hover {
   background-color: #ccc;
+}
+
+.side-menu .media {
+  width: fit-content;
+  margin-left: 10px;
+}
+
+.side-menu .media i {
+  margin: 0 2px;
+  border: none;
+}
+
+.side-menu .media i:hover {
+  color: #616161;
 }
 
 /* ENDING THE SIDE MENU AND STARTING THE WHOLE SECTION */
@@ -215,6 +237,10 @@ main {
   margin: 4rem auto;
 }
 
+.whole .page-navigation .fa {
+  border: none;
+}
+
 .whole .page-navigation .btn {
   border: none;
   font-size: 14px;
@@ -222,7 +248,7 @@ main {
   margin: 0;
 }
 
-.whole .page-navigation .btn:nth-of-type(1) {
+.whole .page-navigation .btn:nth-of-type(2) {
   background: #000;
   color: #fff;
 }
@@ -232,7 +258,7 @@ main {
   color: #fff;
 }
 
-.whole .page-navigation .btn:nth-of-type(1):hover {
+.whole .page-navigation .btn:nth-of-type(2):hover {
   background: #ccc;
   color: #000;
 }
@@ -440,6 +466,11 @@ main {
 
 .contact-me .contacts div:nth-of-type(2) {
   background-color: #009688;
+}
+
+.contact-me .contacts div i {
+  font-size: 30px;
+  margin: 5px 0;
 }
 
 .contact-me form {
