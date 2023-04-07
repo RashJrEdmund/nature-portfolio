@@ -37,6 +37,7 @@ main {
 /* STARTING THE SIDE MENU */
 
 .side-carrier {
+  background-color: brown;
   position: relative;
   width: 100%;
   z-index: 3;
@@ -45,10 +46,12 @@ main {
 }
 
 .side-menu {
+  position: fixed;
   background-color: #fff;
   width: 100%;
   max-width: 300px;
   top: 0;
+  right: ;
   left: calc(20vw - 300px);
   height: 100vh;
   overflow: auto;
@@ -135,7 +138,6 @@ main {
 .whole {
   width: fit-content;
   width: 100%;
-  right: 0;
 }
 
 .sub-whole {
